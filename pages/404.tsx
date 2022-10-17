@@ -1,4 +1,5 @@
 import Container from 'components/Container';
+import Link from 'next/link';
 
 export default function NotFound() {
     return (
@@ -13,9 +14,9 @@ export default function NotFound() {
           <p className="text-gray-600 dark:text-gray-400 mb-8">
             I'm guessing you spelled something wrong. Can you double check that URL?
           </p>
-          <a className="p-1 sm:p-4 w-64 font-bold mx-auto bg-gray-200 dark:bg-gray-800 text-center rounded-md text-black dark:text-white" href="/">
+          <Link className="p-1 sm:p-4 w-64 font-bold mx-auto bg-gray-200 dark:bg-gray-800 text-center rounded-md text-black dark:text-white" href="/">
             Return Home
-          </a>
+          </Link>
       </div>
       </Container>
     );
