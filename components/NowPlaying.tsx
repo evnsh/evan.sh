@@ -74,19 +74,22 @@ function AnimatedBars() {
 export default function NowPlaying() {
 
   const { data: user } = useLanyard("399976828166602752");
+  const appleMusic = user?.activities.find(
+    (activity) => activity.name === "Apple Music"
+  );
   
   return (
     <div className="flex flex-row-reverse items-center sm:flex-row mb-8 space-x-0 sm:space-x-2 w-full">
     <AnimatedBars />
     <div className="inline-flex flex-col sm:flex-row w-full max-w-full truncate">
-      {user?.activities[0]?.details ? (
+      {(appleMusic?.details) ? (
         <a
           className="capsize text-gray-800 dark:text-gray-200 font-medium  max-w-max truncate"
           href="https://music.apple.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {user?.activities[0]?.details}
+          {appleMusic?.details}
         </a>
       ) : (
         <p className="capsize text-gray-800 dark:text-gray-200 font-medium">
@@ -97,7 +100,11 @@ export default function NowPlaying() {
         {' – '}
       </span>
       <p className="capsize text-gray-500 dark:text-gray-300 max-w-max truncate">
-        {user?.activities[0]?.state ?? 'Apple Music'}
+        {(appleMusic?.state) ? (
+					appleMusic?.state
+				) : (
+					"Apple Music"
+				)}
       </p>
     </div>
   </div>
