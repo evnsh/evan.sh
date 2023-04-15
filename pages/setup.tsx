@@ -12,16 +12,15 @@ export default function Setup() {
         </h1>
         <p className="text-gray-700 dark:text-gray-300 mt-2 mb-8">
           Here's what tech I'm currently using for coding and gaming.
-          Most of these have been accumulated over the past few years, with a
-          recent home office upgrade in 2022.
+          Most of these have been accumulated over the past few years.
         </p>
         <div className="prose dark:prose-dark w-full">
           <h3 id="computer-office">Computer / Office</h3>
           <ul>
             <li>14&quot; Macbook Pro (2021, Base Model)</li>
             <li>34&quot; Huawei MateView GT</li>
-            <li>Logitech MX Master 3 Mouse</li>
-            <li>Apple Magic Keyboard</li>
+            <li>Logitech G Pro Mouse</li>
+            <li>Keychron K8 Pro</li>
             <li>Ikea Desk, Chair and Plants</li>
           </ul>
           <h3 id="coding">Coding</h3>
@@ -33,7 +32,7 @@ export default function Setup() {
               </a>
               )
             </li>
-            <li>Theme: Rosé Pine</li>
+            <li>Theme: Tokyo Night</li>
             <li>Terminal: iTerm2 / zsh</li>
           </ul>
           <h3 id="gaming">Gaming</h3>
@@ -51,14 +50,14 @@ export default function Setup() {
             <li>Slack</li>
             <li>Telegram</li>
             <li>Raycast</li>
-            <li>Xcode</li>
+			<li>Cron Calendar</li>
           </ul>
           <h3 id="other-tech">Other Tech</h3>
           <ul>
-            <li>Apple Airpods Pro (1st Gen)</li>
+            <li>Airpods Pro (1st Gen)</li>
             <li>Apple Watch Series 7</li>
-            <li>Apple iPhone 12</li>
-            <li>Apple iPad Air (4th Gen)</li>
+            <li>iPhone 12</li>
+            <li>iPad Air (4th Gen)</li>
           </ul>
         </div>
       </article>

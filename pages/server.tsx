@@ -12,7 +12,7 @@ export default function Server() {
         </h1>
         <p className="text-gray-700 dark:text-gray-300 mt-2 mb-8">
           Mid 2022 I decided to transition from using pricey cloud services to self-hosting
-          my own services on my home server. Here's a list of all services I'm hosting as well
+          my own services at home. Here's a list of all services I'm hosting as well
           as the specs of my server.
         </p>
         <div className="prose dark:prose-dark w-full">
@@ -25,12 +25,7 @@ export default function Server() {
           </ul>
           <h3 id="services">Services</h3>
           <ul>
-            <li>Home Assistant</li>
-            <li>TrueNAS (3x 8Tb HDD)</li>
-            <li>Grafana</li>
-            <li>Shlink</li>
-            <li>Uptime Kuma</li>
-            <li>And a few game servers for friends</li>
+            <li>WIP</li>
           </ul>
         </div>
       </article>
