@@ -16,12 +16,12 @@ export default function Home() {
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
                 Software Engineering Student at{' '}
-                <span className="font-semibold">42</span>
+                <span className="font-semibold">42 Nice</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                I'm a 20 years old student currently pursuing full-stack web development
-				to create stunning user experiences on the front-end, and scalable and
-				secure infrastructure on the backend.
+			    I'm a 20-year-old student currently pursuing full-stack web development
+				to create stunning user experiences on the front-end, and scalable, 
+				secure infrastructure on the back-end.
               </p>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
