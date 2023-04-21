@@ -21,7 +21,7 @@ export default function Setup() {
             <li>34&quot; Huawei MateView GT</li>
             <li>Logitech G Pro Mouse</li>
             <li>Keychron K8 Pro</li>
-            <li>Ikea Desk, Chair and Plants</li>
+            <li>IKEA desk, chair and plants 🌱</li>
           </ul>
           <h3 id="coding">Coding</h3>
           <ul>
@@ -42,15 +42,16 @@ export default function Setup() {
             <li>AMD MPG B550 Gaming Plus</li>
             <li>AMD Radeon RX 6600</li>
           </ul>
-          <h3 id="software">Software</h3>
+          <h3 id="software">Favorite Software</h3>
           <ul>
             <li>1Password</li>
-            <li>Apple Music</li>
             <li>Discord</li>
             <li>Slack</li>
-            <li>Telegram</li>
             <li>Raycast</li>
 			<li>Cron Calendar</li>
+			<li>Figma</li>
+			<li>Notion</li>
+			<li>HTTPie</li>
           </ul>
           <h3 id="other-tech">Other Tech</h3>
           <ul>

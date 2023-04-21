@@ -19,9 +19,9 @@ export default function Home() {
                 <span className="font-semibold">42</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Currently pursuing full-stack web development to create stunning
-                user experiences on the front-end, and scalable and secure infrastructure 
-                on the backend.
+                I'm a 20 years old student currently pursuing full-stack web development
+				to create stunning user experiences on the front-end, and scalable and
+				secure infrastructure on the backend.
               </p>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -42,7 +42,7 @@ export default function Home() {
           </h3>
           <div className="flex gap-6 flex-col md:flex-row">
             <BlogPostCard
-              title="My Experience Setting Up My Own Server"
+              title="My Experience Setting up My Own Server"
               slug="setting-up-my-own-server"
               gradient="from-[#D8B4FE] to-[#818CF8]"
             />

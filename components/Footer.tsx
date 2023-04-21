@@ -23,11 +23,6 @@ export default function Footer() {
           <Link href="/">
             <a className="text-gray-500 hover:text-gray-600 transition">Home</a>
           </Link>
-          <Link href="/about">
-            <a className="text-gray-500 hover:text-gray-600 transition">
-              About
-            </a>
-          </Link>
           <Link href="/talk">
             <a className="text-gray-500 hover:text-gray-600 transition">
               Let's Talk
@@ -35,11 +30,10 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://twitter.com/0x4576616e">
-            Twitter
-          </ExternalLink>
-          <ExternalLink href="https://github.com/0x4576616e">GitHub</ExternalLink>
-          <ExternalLink href="https://discord.gg/2aNw4pAa6R">
+          <ExternalLink href="https://github.com/evandotsh">
+			GitHub
+		  </ExternalLink>
+          <ExternalLink href="https://discord.gg/M9pWVHb">
             Discord
           </ExternalLink>
         </div>

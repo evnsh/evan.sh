@@ -1,6 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { animate } from 'motion';
-import { useLanyard } from "use-lanyard";
 
 function AnimatedBars() {
   useEffect(() => {
@@ -73,23 +72,37 @@ function AnimatedBars() {
 
 export default function NowPlaying() {
 
-  const { data: user } = useLanyard("399976828166602752");
-  const appleMusic = user?.activities.find(
-    (activity) => activity.name === "Apple Music"
-  );
+  const [songName, setSongName] = useState('');
+  const [artistName, setArtistName] = useState('');
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://applemusic-evansh.areyouokevan.workers.dev"
+        );
+        const data = await response.json();
+        setSongName(data?.songName);
+        setArtistName(data?.artistName);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
+  }, []);
   
   return (
     <div className="flex flex-row-reverse items-center sm:flex-row mb-8 space-x-0 sm:space-x-2 w-full">
     <AnimatedBars />
     <div className="inline-flex flex-col sm:flex-row w-full max-w-full truncate">
-      {(appleMusic?.details) ? (
+      {(songName) ? (
         <a
           className="capsize text-gray-800 dark:text-gray-200 font-medium  max-w-max truncate"
           href="https://music.apple.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {appleMusic?.details}
+          {songName}
         </a>
       ) : (
         <p className="capsize text-gray-800 dark:text-gray-200 font-medium">
@@ -100,8 +113,8 @@ export default function NowPlaying() {
         {' – '}
       </span>
       <p className="capsize text-gray-500 dark:text-gray-300 max-w-max truncate">
-        {(appleMusic?.state) ? (
-					appleMusic?.state
+        {(artistName && songName) ? (
+					artistName
 				) : (
 					"Apple Music"
 				)}
