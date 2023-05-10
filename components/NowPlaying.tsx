@@ -79,7 +79,7 @@ export default function NowPlaying() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://applemusic-evansh.areyouokevan.workers.dev"
+          "https://music-wk.evanops.net"
         );
         const data = await response.json();
         setSongName(data?.songName);
