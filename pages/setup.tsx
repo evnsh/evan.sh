@@ -57,7 +57,7 @@ export default function Setup() {
           <ul>
             <li>Airpods Pro (1st Gen)</li>
             <li>Apple Watch Series 7</li>
-            <li>iPhone 12</li>
+            <li>iPhone 15 Pro Max</li>
             <li>iPad Air (4th Gen)</li>
           </ul>
         </div>
