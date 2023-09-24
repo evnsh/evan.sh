@@ -55,7 +55,7 @@ export default function Setup() {
           </ul>
           <h3 id="other-tech">Other Tech</h3>
           <ul>
-            <li>Airpods Pro (1st Gen)</li>
+            <li>Airpods Pro (2nd Gen)</li>
             <li>Apple Watch Series 7</li>
             <li>iPhone 15 Pro Max</li>
             <li>iPad Air (4th Gen)</li>
