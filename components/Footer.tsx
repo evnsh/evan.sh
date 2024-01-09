@@ -51,7 +51,9 @@ export default function Footer() {
         </div>
       </div>
 	  <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
-	  ✨ 🐈 💨️️️️️️
+	  <div>
+      <a target="_blank" href="https://uptime.betterstack.com"><img style={{width: "130px", height: "52px"}} alt="Better Stack Website Monitoring" src="https://uptime.betterstack.com/assets/static_assets/badges/light.png" /></a>
+    </div>
     </footer>
   );
 }
